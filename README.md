@@ -15,7 +15,13 @@ Launch `rqt`, and open Plugins->Robot Tools->Joint trajectory controller and mov
 
 * Move the __single_rrbot__ robot using MoveIt!
 
+Install necessary packages like:
+
+`sudo apt-get install ros-indigo-ompl-visual-tools 
+ sudo apt-get install ros-indigo-moveit-ros-*`
+
 Load the planning environment:
+
 
 `roslaunch single_rrbot_moveit_config move_group.launch`
 
