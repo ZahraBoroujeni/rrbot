@@ -17,8 +17,7 @@ Launch `rqt`, and open Plugins->Robot Tools->Joint trajectory controller and mov
 
 Install necessary packages like:
 
-`sudo apt-get install ros-indigo-ompl-visual-tools 
- sudo apt-get install ros-indigo-moveit-ros-*`
+`sudo apt-get install ros-indigo-ompl-visual-tools ros-indigo-moveit-ros-*`
 
 Load the planning environment:
 
