@@ -1,6 +1,6 @@
 # rrbot
 Comprehensive example to show recent capabilities in ROS/Gazebo/MoveIt!
-
+Hint: You should install a lot of package from ros indigo!
 ## Dependencies
 
 ## Uses
