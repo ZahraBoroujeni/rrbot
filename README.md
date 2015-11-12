@@ -1,6 +1,10 @@
 # rrbot
 Comprehensive example to show recent capabilities in ROS/Gazebo/MoveIt!
-Hint: You should install a lot of package from ros indigo!
+
+Hint: You should install ros indigo and gazebo2! It seems you should install ROS-indigo!
+
+
+sudo apt-get install ros-indigo-desktop-full
 ## Dependencies
 
 ## Uses
