@@ -145,7 +145,8 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://rrbot_description/model/meshes/hokuyo.dae"/>
+        <box size="0.01 0.01 0.01"/>
+        <!--mesh filename="package://rrbot_description/model/meshes/hokuyo.dae"/-->
       </geometry>
     </visual>
 
@@ -168,7 +169,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-	<box size="${camera_link} ${camera_link} ${camera_link}"/>
+        <box size="${camera_link} ${camera_link} ${camera_link}"/>
       </geometry>
     </collision>
 

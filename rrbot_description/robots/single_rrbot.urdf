@@ -129,7 +129,8 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://rrbot_description/model/meshes/hokuyo.dae"/>
+        <box size="0.01 0.01 0.01"/>
+        <!--mesh filename="package://rrbot_description/model/meshes/hokuyo.dae"/-->
       </geometry>
     </visual>
     <inertial>
@@ -208,7 +209,7 @@
     <material>Gazebo/Red</material>
   </gazebo>
   <gazebo reference="single_rrbot_hokuyo_link">
-    <sensor name="head_hokuyo_sensor" type="gpu_ray">
+    <sensor name="head_hokuyo_sensor" type="ray">
       <pose>0 0 0 0 0 0</pose>
       <visualize>false</visualize>
       <update_rate>40</update_rate>
@@ -236,7 +237,7 @@
           <stddev>0.01</stddev>
         </noise>
       </ray>
-      <plugin filename="libgazebo_ros_gpu_laser.so" name="single_rrbot_gazebo_ros_head_hokuyo_controller">
+      <plugin filename="libgazebo_ros_laser.so" name="single_rrbot_gazebo_ros_head_hokuyo_controller">
         <!-- Publish within the robot namespace -->
         <robotNamespace>single_rrbot</robotNamespace>
         <topicName>laser/scan</topicName>

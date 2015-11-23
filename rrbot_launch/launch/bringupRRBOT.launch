@@ -72,5 +72,7 @@
 	  output="screen" args="joint_state_controller position_trajectory_controller"/>
 
   </group>
+  <node pkg="tf" type="static_transform_publisher" name="laser_FRAME" args="0 0 0 0 0 0 /$(arg robot_name)_hokuyo_link /$(arg robot_name)/$(arg robot_name)_hokuyo_link 500" />
+  <node pkg="tf" type="static_transform_publisher" name="camera_FRAME" args="0 0 0 0 0 0 /$(arg robot_name)_camera_link /$(arg robot_name)/$(arg robot_name)_camera_link 500" />
 
 </launch>
